@@ -13,8 +13,8 @@ const nuevoBool = false;
 const nuevaResta = 10 - 5 === 5;
 true
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 3 === 40 ;
-false
+const nuevaMultiplicacion = 10 * 4 === 40 ;
+true
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
 true
@@ -42,7 +42,7 @@ return(x + y);
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-return(y-x);
+return(y - x);
 }
 
 function multiplica(x, y) {
@@ -155,7 +155,7 @@ return (Math.ceil(num));
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-return (Math.floor(Math.random));
+return Math.random();
 }
 
 function esPositivo(numero) {
@@ -163,9 +163,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-if (is_numeric(numero)) {return 'Es positivo';
-} else {
-  return 'Es negativo';
+if (numero ===0) {
+  return false;
+} 
+else if (numero > 0) {
+  return "Es positivo"
+}
+else {
+  return "Es negativo";
 }
 }
 
@@ -173,21 +178,22 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  console.log(str + ' !');
+  return (str + ' !');
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-console.log (`Hola, mi nombre es ${nombre}${ apellido}`);
+var combinado = nombre + " " + apellido;
+return combinado;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-console.log('Hola ' + nombre);
+return ('Hola ' + nombre + '!');
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -225,10 +231,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+if (letra.length > 1) {
+  return "Dato Incorrecto"
+}
 if (letra == 'a','e','i','o','u') {
   return ('Es vocal')
 } 
-return ('Dato incorrecto')
+else ('Dato incorrecto')
 }
 
 
