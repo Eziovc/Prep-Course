@@ -42,7 +42,7 @@ return(x + y);
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-return(y - x);
+return x - y;
 }
 
 function multiplica(x, y) {
@@ -206,7 +206,7 @@ return ancho * alto;
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-return (lado * lado);
+return (lado * 4);
 }
 
 
@@ -231,13 +231,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-if (letra.length > 1) {
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
   return "Dato incorrecto"
-}
-if (letra == 'a','e','i','o','u') {
-  return ('Es vocal')
-} 
-return ('Dato incorrecto')
 }
 
 
