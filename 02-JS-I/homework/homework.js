@@ -54,7 +54,7 @@ return(x*y);
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-return(x / y);
+return x / y;
 }
 
 function sonIguales(x, y) {
@@ -199,7 +199,7 @@ return ('Hola ' + nombre + '!');
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-return alto * ancho;
+return ancho * alto;
 }
 
 
