@@ -54,7 +54,7 @@ return(x*y);
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-return(x/y);
+return(x / y);
 }
 
 function sonIguales(x, y) {
@@ -178,7 +178,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return (str + ' !');
+  return (str + '!');
 }
 
 function combinarNombres(nombre, apellido) {
@@ -199,7 +199,7 @@ return ('Hola ' + nombre + '!');
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-return (alto * ancho);
+return alto * ancho;
 }
 
 
@@ -232,12 +232,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
 if (letra.length > 1) {
-  return "Dato Incorrecto"
+  return "Dato incorrecto"
 }
 if (letra == 'a','e','i','o','u') {
   return ('Es vocal')
 } 
-else ('Dato incorrecto')
+return ('Dato incorrecto')
 }
 
 
