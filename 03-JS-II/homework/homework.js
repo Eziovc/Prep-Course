@@ -189,7 +189,7 @@ for (var i; i <= 10; i++) {
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  console.log(false);
 }
 
 function doWhile(numero) {
