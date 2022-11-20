@@ -70,7 +70,7 @@ for (var i = 0; i < array.lenght; i++) {
     return true;
   }
 }
-retur false;
+return false;
 }
 
 
@@ -212,8 +212,8 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-Var array = []
-Var aumento = numero;
+var array = []
+var aumento = numero;
 for(var i = 0; i<10; i++) {
  aumento = aumento + 2;
  if(aumento === i) break;
@@ -227,7 +227,6 @@ if(i < 10) {
 else {
   return array;
 }
-
 }
 
 
